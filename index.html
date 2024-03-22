@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Page title -->
+  <title>Scratch Text Engine Generator</title>
+  <!-- Styles start -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="inputs.css">
+  <!-- Styles end -->
+</head>
+<body>
+  <!-- Imported/Custom fonts -->
+  <div id="custom_fonts">
+  </div>
+  <!-- A little presentation -->
+  <section>
+    <h1 class="title"><a href="https://github.com/samuellouf">SamuelLouf</a>'s <a href="https://github.com/samuellouf/ScratchTools"><i>ScratchTools</i></a></h1>
+    <br>
+  </section>
+  <hr>
+  <section id="STE">
+    <h1>Scratch Text Engine</h1>
+    <form>
+      <div class="selectmenu select" id="font">
+        <div class="selected">Select an option</div>
+        <div class="options hidden">
+          <div class="option" value="Serif"><span style="font-family: 'Serif';">Serif</span></div>
+          <div class="option" value="Sans Serif"><span style="font-family: 'Sans Serif';">Sans Serif</span></div>
+          <div class="option" value="Marker"><span style="font-family: 'Marker';">Marker</span></div>
+          <div class="option" value="custom" onselect="loadCustomFont();">Custom font</div>
+          <!-- <div class="option" value="value">Displayed text</div> -->
+        </div>
+      </div>
+      <div class="min_letters">
+        <input type="checkbox" id="min_letters" checked>
+        <label>Minuscule letters</label>
+      </div>
+      <div class="maj_letters">
+        <input type="checkbox" id="maj_letters" checked>
+        <label>Majuscule letters</label>
+      </div>
+      <div class="ponctuation">
+        <input type="checkbox" id="ponctuation" checked>
+        <label>Ponctuation marks</label>
+      </div>
+      <div class="numbers">
+        <input type="checkbox" id="numbers" checked>
+        <label>Numbers</label>
+      </div>
+      <div class="mathematics">
+        <input type="checkbox" id="mathematics">
+        <label>Mathematics</label>
+      </div>
+      <div class="custom">
+        <input type="text" id="custom_chars" placeholder="Custom characters" class="select">
+        <label>Custom characters</label>
+      </div>
+      <br>
+      <input type="submit" value="Generate Sprite" onclick="generateSprite();" class="buttonw">
+      <input type="submit" value="Generate Project" onclick="generateProject();" class="button">
+    </form>
+  </section>
+  <!-- Scrpit start -->
+  <script src="jszip.js"></script>
+  <script src="jszip-easy.js"></script>
+  <script src="script.js"></script>
+  <!-- Scrpit end -->
+</body>
+</html>

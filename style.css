@@ -1,0 +1,29 @@
+/* Load fonts */
+/* Load Serif font */
+@font-face {
+  font-family: 'Serif';
+  src: url('./fonts/LiberationSerif-Regular.ttf');
+}
+
+/* Load Sans Serif font */
+@font-face {
+  font-family: 'Sans Serif';
+  src: url('./fonts/arial.ttf');
+}
+
+/* Load Marker font */
+@font-face {
+  font-family: 'Marker';
+  src: url('./fonts/Marker.TTF');
+}
+
+/* Add style to body */
+body{
+  font-family: 'Sans Serif';
+}
+
+/* Other styles */
+.title{
+  font-size: xx-large;
+  text-align: center;
+}
